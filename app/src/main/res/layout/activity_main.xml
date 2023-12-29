@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="12dp"
+                style="?attr/materialCardViewElevatedStyle"
+                app:cardUseCompatPadding="true">
+                <androidx.appcompat.widget.SearchView
+                    style="?attr/materialSearchViewStyle"
+                    android:id="@+id/search_issues"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:queryHint="Search news"
+                    app:queryBackground="@android:color/transparent"
+                    />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btn_filter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/filter"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <TextView
+              android:id="@+id/resultnotfound"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="No Search result found"
+              android:layout_gravity="center"
+              android:visibility="invisible"
+              />
+          <ProgressBar
+              android:id="@+id/progressbar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="invisible"
+              android:layout_gravity="center"/>
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/issues_recylce"
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="0dp"/>
+      </FrameLayout>
+
+
+</LinearLayout>
