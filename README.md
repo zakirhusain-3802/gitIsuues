@@ -21,16 +21,6 @@ Make sure you have the following installed on your development machine:
 ### Installation
 - Apk file : 
 
-## Usage
-
-1. Open the app on your Android device.
-
-2. Browse through the list of closed issues or use the search functionality to find specific issues.
-
-3. **Pagination (Not implemented yet):** Load more issues as you scroll down.
-
-4. **Status Filter (Not implemented yet):** Filter issues based on their status.
-
 ## Technologies Used
 
 - Kotlin
