@@ -5,7 +5,7 @@ Welcome to the GitHub Issues Viewer App! This Android application allows you to 
 
 ## Features
 
-- **Display Issues:** View a list of closed issues with details such as title, created date, closed date, username, and user image.
+- **Display Issues:** View a list of issues with details such as title, created date, closed date, username, and user image.
 - **Search Functionality:** Easily search for specific issues based on keywords.
 - **Status Filter:** Filter issues based on their status.
 
