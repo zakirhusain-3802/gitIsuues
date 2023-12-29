@@ -162,22 +162,16 @@ class MainActivity : AppCompatActivity() {
                 R.id.menuAll -> {
                     filterStatus = "all"
                     fetchClosedIssues()
-
-                    true
                 }
 
                 R.id.menuOpen -> {
                     filterStatus = "open"
                     fetchClosedIssues()
-
-                    true
                 }
 
                 R.id.menuClosed -> {
                     filterStatus = "closed"
                     fetchClosedIssues()
-
-                    true
                 }
 
                 else -> false
